@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Catatan">
+        <p class="poppins-medium">Doraemon</p>
+        <div class="image-center">
+            <img src="assets/doraemon.png" alt="" style="max-width: 100%; height: auto; border-radius: 25px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+        </div>
+
+        <p class="txt-waktu" id="hasil"></p>
+        <br>
+        <div class="poppins-regular">Agenda Pertemuan :</div>
+        <ul>
+            <li>Selesaikan Penulisan Dokumen</li>
+            <li>Bagikan pembaruan dengan tim</li>
+            <li>Daftar periksa pra-peluncuran</li>
+        </ul>
+        <br>
+        <button style="cursor: pointer;" onclick="show()">Periksa</button>
+    </div>
+
+    <script>
+        function updateTime() {
+            var date = new Date();
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+            var formattedDate = date.toLocaleDateString('id-ID', options);
+            document.getElementById("hasil").innerHTML = formattedDate;
+        }
+        
+        setInterval(updateTime, 1000);
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

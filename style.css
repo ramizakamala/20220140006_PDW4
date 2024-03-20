@@ -1,0 +1,67 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f3f4f6; /* Warna latar belakang */
+}
+
+.Catatan {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Warna latar belakang kotak catatan */
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    max-width: 500px; /* Lebar maksimum kotak catatan */
+    margin: 50px auto; /* Posisi kotak catatan di tengah halaman */
+}
+
+.poppins-medium {
+    font-weight: 500;
+    color: #333333; /* Warna teks judul */
+}
+
+.image-center {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img-doraemon {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk gambar */
+}
+
+.txt-waktu {
+    font-size: 16px;
+    color: #666666; /* Warna teks waktu */
+}
+
+.poppins-regular {
+    font-weight: 400;
+    color: #444444; /* Warna teks agenda */
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan bullet pada daftar */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50; /* Warna tombol */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna tombol saat dihover */
+}
